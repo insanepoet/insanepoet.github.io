@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GamePI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#nav").load("assets/Includes/nav.html");
+                $("#footer").load("assets/Includes/footer.html");
+            });
+        </script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Oh no! Go Back!</a></h1>
+					<nav id="nav">
+						<!-- Navigation will be loaded here from nav.html -->
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Codename: GamePI</h2>
+							<p>Websites about video games are in abundance, good data from said games on these sites is a whole other story.</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+								<h3>What is Codename: GamePI</h3>
+								<p>What would a centralized game data api look like? How useful would it be to supply websites with information 
+									about the internal data of games? I dunno, but as a project I decided to find out. GamePI plans to offer detailed 
+									information about various video games, including but not limited to: item stats, character stats, weapon stats, 
+									map data, and more. Data dumps from each game will be automated via scripts that parse the game files and extract
+									the relevant information, with version watches built in to automatically update on releases. This data will 
+									then be stored in a database and made accessible via both GraphQL and REST APIs via GraphQL2REST.
+								</p>
+								<h3>Sounds neat, can I use it?</h3>
+								<p>Not yet, I have 964 Unreal Engine games in my Steam library and i'm about halfway through analyzing the data and building 
+									automation scripts. Once I reach 1000 games in the database, I will launch version 1.0 with the following features: </p>
+								<ul>
+									<li>Browsable Game Pages with information on the data collected.</li>
+									<li>Full featured API (*Rate Limited).</li>
+									<li>Tools to submit your game data to the site.</li>
+									<li>Build Pipeline Scripts for Unreal, Godot, and GameMaker so developers can provide updated data should they choose.</li>
+									<li>A sense of completion for a simple but technically complex project.</li>
+								</ul>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<!-- Footer will be loaded here from footer.html -->
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

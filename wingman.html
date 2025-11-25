@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>IT-Wingman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#nav").load("assets/Includes/nav.html");
+                $("#footer").load("assets/Includes/footer.html");
+            });
+        </script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Oh no! Go Back!</a></h1>
+					<nav id="nav">
+						<!-- Navigation will be loaded here from nav.html -->
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>IT-Wingman</h2>
+							<p>The IT Wingman project aimed to replace an existing solution and advance the equipment 
+								tracking and management within a particular Air Force Medical Group IT Deparment. It is 
+								designed to be a comprehensive intranet based application empowering IT personnel in their 
+								daily tasks, providing them with the tools to efficiently handle equipment checkouts,
+								returns, repairs, imaging, and software installations. The application prioritizes 
+								user-friendliness, reliability, and data security.</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<h3>Goals and Objectives</h3>
+										<p>The primary goals of the IT Wingman project are:</p>
+										<ul>
+											<li><strong>Streamline Processes:</strong> Automate and simplify routine tasks like
+												 checkouts, returns, and inventory updates, reducing manual effort and potential errors.</li>
+											<li><strong>Enhanced Visibility:</strong> Provide a centralized, up-to-date view of equipment inventory,
+												 location, status, and usage history.</li>
+											<li><strong>Improved Efficiency:</strong> Facilitate quicker repairs and imaging processes to reduce
+												 equipment downtime and ensure resources are available when needed.</li>
+											<li><strong>Accountability:</strong> Establish a clear audit trail of equipment usage and maintenance
+												 actions, fostering responsibility and transparency.</li>
+											<li><strong>Data-Driven Insights:</strong> Generate reports and visualizations to help identify trends,
+												 optimize resource allocation, and make informed decisions.</li>
+										</ul>
+										<h3>Scope and Deliverables</h3>
+										<p>The project scope encompasses:</p>
+										<ul>
+											<li><strong>Development:</strong> Creating a Rust-based intranet based application with a modern, intuitive 
+												graphical user interface (GUI) using the Iced framework.</li>
+											<li><strong>Database:</strong> Implement a robust and scalable MS SQL Server database schema to store 
+												equipment, customers, transactions, and related data.</li>
+											<li><strong>Integration:</strong> Seamless integration with Active Directory for user authentication, role-based access control (RBAC), and user provisioning.</li>
+											<li><strong>Core Features:</strong> 
+												<ul>
+													<li>Equipment check-out/check-in with barcode scanning and digital signature of PDF forms.</li>
+													<li>Repair and imaging tracking with detailed logs.</li>
+													<li>Software installation and license management.</li>
+													<li>User/customer management and lookup with Active Directory integration.</li>
+													<li>Comprehensive reporting with filtering, sorting, and export options.</li>
+													<li>Customizable home screen with widgets for quick access to information and tools.</li>
+												</ul>
+											</li>
+										</ul>
+										<p>The project scope explicitly excludes:</p>
+										<ul>
+											<li>Integration with external IT systems (like ServiceNow) in the initial release.</li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>System Architecture</h3>
+											<p>As the Fed pushes for Rust, it was determined the application would be more likely
+												to pass the necessary security reviews if built in Rust. The Iced GUI library was chosen
+												for the front-end due to its simplicity and WASM Compataility layer.
+											</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="#" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+											<h3>Data Model</h3>
+											<p>An application of this nature and scale requires a well-structured relational database
+												to store and manage equipment, user, transactions, and other essential data.
+											</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="#" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<section>
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+											<h3>User Interface Design</h3>
+											<p>The IT Wingman application's user interface (UI) will be intuitive, efficient, and visually
+												 appealing, adhering to modern design principles. The goal is to provide a seamless user
+												  experience for all roles, from service technicians, and system administrators, to cyber 
+												  security and IT Administrators, while ensuring each role has access to the specific 
+												  features and data they need.
+											</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="#" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<!-- Footer will be loaded here from footer.html -->
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
